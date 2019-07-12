@@ -2,4 +2,14 @@
   <div class="jumbotron">
     <h1 class="center">Enter Search city</h1>
   </div>
- </div>  
+ 
+
+  <div class="row">
+    <aside class="col-md-6 col-md-offset-4">
+    <%= form_tag  do %>
+    <%= text_field_tag :city, params[:city] %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+    <% end %>
+    </aside>
+  </div>
+</div> 
