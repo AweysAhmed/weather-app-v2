@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe WeatherController, type: :controller do
-  describe 'GET #' do
+  describe 'get function' do
 
     it 'returns a response of 200' do
       get("https://api.openweathermap.org/data/2.5/weather?q=ottawa&units=metric&APPID=#{ENV['weatherbit_api']}")
